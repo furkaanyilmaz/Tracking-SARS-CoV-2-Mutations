@@ -1,0 +1,2055 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>974</width>
+    <height>778</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">*{
+border:none;
+
+}
+#centralwidget{
+background-color:#319197;
+}
+</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item alignment="Qt::AlignTop">
+     <widget class="QFrame" name="navbar_frame">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(207, 207, 207);
+</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item alignment="Qt::AlignRight">
+        <widget class="QLabel" name="label_2">
+         <property name="styleSheet">
+          <string notr="true">color: rgb(0, 0, 0);</string>
+         </property>
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt; font-weight:600; color:#000000;&quot;&gt;     TRACKING SARS-CoV-2 MUTATIONS&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item alignment="Qt::AlignRight|Qt::AlignVCenter">
+        <widget class="QFrame" name="frame_6">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_4">
+          <item>
+           <widget class="QPushButton" name="minimize_button">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>:/icon/white_icons/minus.png</normaloff>:/icon/white_icons/minus.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="restore_button">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>:/icon/white_icons/square.png</normaloff>:/icon/white_icons/square.png</iconset>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="close_button">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>:/icon/white_icons/close-cross.png</normaloff>:/icon/white_icons/close-cross.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>12</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="content_frame">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_5">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QFrame" name="frame_3">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: black;</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_5" stretch="0">
+          <property name="spacing">
+           <number>6</number>
+          </property>
+          <property name="leftMargin">
+           <number>9</number>
+          </property>
+          <property name="rightMargin">
+           <number>9</number>
+          </property>
+          <item>
+           <widget class="QStackedWidget" name="stackedWidget">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="currentIndex">
+             <number>0</number>
+            </property>
+            <widget class="QWidget" name="login_main_page">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_11">
+              <item>
+               <widget class="QFrame" name="login_main_frame">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(0, 0, 0);
+</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <widget class="QPushButton" name="sign_in_button">
+                 <property name="geometry">
+                  <rect>
+                   <x>340</x>
+                   <y>399</y>
+                   <width>251</width>
+                   <height>41</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(0, 0, 0);
+color:white;
+border:none;
+padding-bottom:3px;
+border-radius:7px;
+
+border :2px solid ;
+border-top-color : white; 
+border-left-color :white;
+border-right-color :white;
+border-bottom-color : white
+</string>
+                 </property>
+                 <property name="text">
+                  <string>Sign In</string>
+                 </property>
+                </widget>
+                <widget class="QPushButton" name="login_button">
+                 <property name="geometry">
+                  <rect>
+                   <x>340</x>
+                   <y>340</y>
+                   <width>251</width>
+                   <height>41</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(0, 0, 0);
+color:white;
+border:none;
+padding-bottom:3px;
+border-radius:7px;
+
+border :2px solid ;
+border-top-color : white; 
+border-left-color :white;
+border-right-color :white;
+border-bottom-color : white
+</string>
+                 </property>
+                 <property name="text">
+                  <string>Login</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="login_main_gif">
+                 <property name="geometry">
+                  <rect>
+                   <x>350</x>
+                   <y>50</y>
+                   <width>240</width>
+                   <height>240</height>
+                  </rect>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="register_confirmation_page">
+             <widget class="QFrame" name="frame_2">
+              <property name="geometry">
+               <rect>
+                <x>-10</x>
+                <y>0</y>
+                <width>961</width>
+                <height>681</height>
+               </rect>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <widget class="QLabel" name="confirmation_gif">
+               <property name="geometry">
+                <rect>
+                 <x>380</x>
+                 <y>160</y>
+                 <width>220</width>
+                 <height>215</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_4">
+               <property name="geometry">
+                <rect>
+                 <x>310</x>
+                 <y>400</y>
+                 <width>391</width>
+                 <height>21</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>16</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: rgb(255, 255, 255);</string>
+               </property>
+               <property name="text">
+                <string>Your Account has been Confirmed.</string>
+               </property>
+              </widget>
+              <widget class="QPushButton" name="login_button_4">
+               <property name="geometry">
+                <rect>
+                 <x>430</x>
+                 <y>450</y>
+                 <width>121</width>
+                 <height>41</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>16</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(0, 0, 0);
+color:white;
+border:none;
+padding-bottom:3px;
+border-radius:7px;
+
+border :2px solid ;
+border-top-color : white; 
+border-left-color :white;
+border-right-color :white;
+border-bottom-color : white
+</string>
+               </property>
+               <property name="text">
+                <string>Login</string>
+               </property>
+              </widget>
+             </widget>
+            </widget>
+            <widget class="QWidget" name="register_page">
+             <widget class="QFrame" name="register_frame">
+              <property name="geometry">
+               <rect>
+                <x>-9</x>
+                <y>-4</y>
+                <width>961</width>
+                <height>681</height>
+               </rect>
+              </property>
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <widget class="QLineEdit" name="signin_name">
+               <property name="geometry">
+                <rect>
+                 <x>300</x>
+                 <y>220</y>
+                 <width>151</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(200, 200, 200);
+color:black;
+border:none;
+padding-bottom:3px;
+border-radius:7px;
+
+border :2px solid ;
+border-top-color : white; 
+border-left-color :white;
+border-right-color :white;
+border-bottom-color : white
+</string>
+               </property>
+               <property name="placeholderText">
+                <string>Name</string>
+               </property>
+              </widget>
+              <widget class="QLineEdit" name="signin_surname">
+               <property name="geometry">
+                <rect>
+                 <x>470</x>
+                 <y>220</y>
+                 <width>141</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(200, 200, 200);
+color:black;
+border:none;
+padding-bottom:3px;
+border-radius:7px;
+
+border :2px solid ;
+border-top-color : white; 
+border-left-color :white;
+border-right-color :white;
+border-bottom-color : white
+</string>
+               </property>
+               <property name="placeholderText">
+                <string>Surname</string>
+               </property>
+              </widget>
+              <widget class="QLineEdit" name="signin_email">
+               <property name="geometry">
+                <rect>
+                 <x>300</x>
+                 <y>270</y>
+                 <width>311</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(200, 200, 200);
+color:black;
+border:none;
+padding-bottom:3px;
+border-radius:7px;
+
+border :2px solid ;
+border-top-color : white; 
+border-left-color :white;
+border-right-color :white;
+border-bottom-color : white
+</string>
+               </property>
+               <property name="placeholderText">
+                <string>E - Mail</string>
+               </property>
+              </widget>
+              <widget class="QLineEdit" name="signin_password">
+               <property name="geometry">
+                <rect>
+                 <x>300</x>
+                 <y>320</y>
+                 <width>151</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(200, 200, 200);
+color:black;
+border:none;
+padding-bottom:3px;
+border-radius:7px;
+
+border :2px solid ;
+border-top-color : white; 
+border-left-color :white;
+border-right-color :white;
+border-bottom-color : white
+</string>
+               </property>
+               <property name="placeholderText">
+                <string>Password</string>
+               </property>
+              </widget>
+              <widget class="QLineEdit" name="signin_confirm">
+               <property name="geometry">
+                <rect>
+                 <x>470</x>
+                 <y>320</y>
+                 <width>141</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(200, 200, 200);
+color:black;
+border:none;
+padding-bottom:3px;
+border-radius:7px;
+
+border :2px solid ;
+border-top-color : white; 
+border-left-color :white;
+border-right-color :white;
+border-bottom-color : white
+</string>
+               </property>
+               <property name="placeholderText">
+                <string>Confirm Password</string>
+               </property>
+              </widget>
+              <widget class="QPushButton" name="sign_in_button_2">
+               <property name="geometry">
+                <rect>
+                 <x>300</x>
+                 <y>370</y>
+                 <width>311</width>
+                 <height>41</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>16</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(0, 0, 0);
+color:white;
+border:none;
+padding-bottom:3px;
+border-radius:7px;
+
+border :2px solid ;
+border-top-color : white; 
+border-left-color :white;
+border-right-color :white;
+border-bottom-color : white
+</string>
+               </property>
+               <property name="text">
+                <string>Sıgn In</string>
+               </property>
+              </widget>
+             </widget>
+            </widget>
+            <widget class="QWidget" name="register_page_confirmation">
+             <widget class="QFrame" name="register_page_confirmation_frame">
+              <property name="geometry">
+               <rect>
+                <x>-9</x>
+                <y>-4</y>
+                <width>961</width>
+                <height>681</height>
+               </rect>
+              </property>
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <widget class="QPushButton" name="login_button_3">
+               <property name="geometry">
+                <rect>
+                 <x>400</x>
+                 <y>430</y>
+                 <width>181</width>
+                 <height>41</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>16</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(0, 0, 0);
+color:white;
+border:none;
+padding-bottom:3px;
+border-radius:7px;
+
+border :2px solid ;
+border-top-color : white; 
+border-left-color :white;
+border-right-color :white;
+border-bottom-color : white
+</string>
+               </property>
+               <property name="text">
+                <string>Confirm</string>
+               </property>
+              </widget>
+              <widget class="QLineEdit" name="confirmation_line">
+               <property name="geometry">
+                <rect>
+                 <x>330</x>
+                 <y>340</y>
+                 <width>321</width>
+                 <height>41</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(200, 200, 200);
+color:black;
+border:none;
+padding-bottom:3px;
+border-radius:7px;
+
+border :2px solid ;
+border-top-color : white; 
+border-left-color :white;
+border-right-color :white;
+border-bottom-color : white
+</string>
+               </property>
+               <property name="placeholderText">
+                <string>confirmation code</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label">
+               <property name="geometry">
+                <rect>
+                 <x>330</x>
+                 <y>250</y>
+                 <width>311</width>
+                 <height>71</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: rgb(255, 255, 255);</string>
+               </property>
+               <property name="text">
+                <string>Confirmation code sent to your e-mail</string>
+               </property>
+              </widget>
+             </widget>
+            </widget>
+            <widget class="QWidget" name="login_page">
+             <widget class="QFrame" name="frame">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>-10</y>
+                <width>951</width>
+                <height>691</height>
+               </rect>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <widget class="QPushButton" name="login_button_2">
+               <property name="geometry">
+                <rect>
+                 <x>380</x>
+                 <y>460</y>
+                 <width>221</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>16</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(200, 200, 200);
+color:black;
+border:none;
+padding-bottom:3px;
+border-radius:7px;
+
+border :2px solid ;
+border-top-color : white; 
+border-left-color :white;
+border-right-color :white;
+border-bottom-color : white
+</string>
+               </property>
+               <property name="text">
+                <string>Sign In</string>
+               </property>
+              </widget>
+              <widget class="QLineEdit" name="login_email">
+               <property name="geometry">
+                <rect>
+                 <x>380</x>
+                 <y>360</y>
+                 <width>221</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(200, 200, 200);
+color:black;
+border:none;
+padding-bottom:3px;
+border-radius:7px;
+
+border :2px solid ;
+border-top-color : white; 
+border-left-color :white;
+border-right-color :white;
+border-bottom-color : white
+</string>
+               </property>
+               <property name="placeholderText">
+                <string>E - Mail</string>
+               </property>
+              </widget>
+              <widget class="QLineEdit" name="login_password">
+               <property name="geometry">
+                <rect>
+                 <x>380</x>
+                 <y>410</y>
+                 <width>221</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(200, 200, 200);
+color:black;
+border:none;
+padding-bottom:3px;
+border-radius:7px;
+
+border :2px solid ;
+border-top-color : white; 
+border-left-color :white;
+border-right-color :white;
+border-bottom-color : white
+</string>
+               </property>
+               <property name="placeholderText">
+                <string>Password</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="login_image">
+               <property name="geometry">
+                <rect>
+                 <x>390</x>
+                 <y>190</y>
+                 <width>201</width>
+                 <height>141</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">image: url(:/icon/other_icons/account.svg);</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </widget>
+            </widget>
+            <widget class="QWidget" name="search_page">
+             <widget class="QFrame" name="frame_4">
+              <property name="geometry">
+               <rect>
+                <x>-1</x>
+                <y>-1</y>
+                <width>961</width>
+                <height>691</height>
+               </rect>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <widget class="QLineEdit" name="search_line_edit">
+               <property name="geometry">
+                <rect>
+                 <x>240</x>
+                 <y>260</y>
+                 <width>451</width>
+                 <height>61</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(200, 200, 200);
+color:black;
+border:none;
+padding-bottom:3px;
+border-radius:7px;
+
+border :2px solid ;
+border-top-color : white; 
+border-left-color :white;
+border-right-color :white;
+border-bottom-color : white
+</string>
+               </property>
+               <property name="placeholderText">
+                <string>Write a mutation name...</string>
+               </property>
+              </widget>
+              <widget class="QPushButton" name="search_button">
+               <property name="geometry">
+                <rect>
+                 <x>660</x>
+                 <y>260</y>
+                 <width>51</width>
+                 <height>61</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(200, 200, 200);
+color:black;
+border:none;
+padding-bottom:3px;
+border-radius:5px;
+
+border :2px solid ;
+border-top-color : white; 
+border-left-color : rgb(200, 200, 200);
+border-right-color :white;
+border-bottom-color : white
+</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normaloff>:/icon/white_icons/search.svg</normaloff>:/icon/white_icons/search.svg</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>36</width>
+                 <height>36</height>
+                </size>
+               </property>
+              </widget>
+              <widget class="QPushButton" name="new_mutation_button">
+               <property name="geometry">
+                <rect>
+                 <x>370</x>
+                 <y>390</y>
+                 <width>201</width>
+                 <height>41</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>16</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(0, 0, 0);
+color:white;
+border:none;
+padding-bottom:3px;
+border-radius:7px;
+
+border :2px solid ;
+border-top-color : white; 
+border-left-color :white;
+border-right-color :white;
+border-bottom-color : white
+</string>
+               </property>
+               <property name="text">
+                <string>New Mutation</string>
+               </property>
+              </widget>
+             </widget>
+            </widget>
+            <widget class="QWidget" name="add_mutation_page">
+             <widget class="QFrame" name="frame_5">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>951</width>
+                <height>681</height>
+               </rect>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <widget class="QLabel" name="mutation_name_label">
+               <property name="geometry">
+                <rect>
+                 <x>300</x>
+                 <y>100</y>
+                 <width>161</width>
+                 <height>51</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: rgb(255, 255, 255);
+</string>
+               </property>
+               <property name="text">
+                <string>Mutation Name :</string>
+               </property>
+              </widget>
+              <widget class="QPushButton" name="add_mutation_save_button">
+               <property name="geometry">
+                <rect>
+                 <x>370</x>
+                 <y>580</y>
+                 <width>181</width>
+                 <height>51</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>16</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(0, 0, 0);
+color:white;
+border:none;
+padding-bottom:3px;
+border-radius:7px;
+
+border :2px solid ;
+border-top-color : white; 
+border-left-color :white;
+border-right-color :white;
+border-bottom-color : white
+</string>
+               </property>
+               <property name="text">
+                <string>Save</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="voc_vol_label">
+               <property name="geometry">
+                <rect>
+                 <x>100</x>
+                 <y>230</y>
+                 <width>101</width>
+                 <height>41</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: rgb(255, 255, 255);</string>
+               </property>
+               <property name="text">
+                <string>VoC / Vol</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="effect_vaccine_label">
+               <property name="geometry">
+                <rect>
+                 <x>240</x>
+                 <y>230</y>
+                 <width>151</width>
+                 <height>41</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: rgb(255, 255, 255);</string>
+               </property>
+               <property name="text">
+                <string>Effect on Vaccine</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="Infectiousness_label">
+               <property name="geometry">
+                <rect>
+                 <x>420</x>
+                 <y>220</y>
+                 <width>121</width>
+                 <height>71</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: rgb(255, 255, 255);</string>
+               </property>
+               <property name="text">
+                <string>Infectiousness</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="death_rate_label">
+               <property name="geometry">
+                <rect>
+                 <x>580</x>
+                 <y>230</y>
+                 <width>101</width>
+                 <height>71</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: rgb(255, 255, 255);</string>
+               </property>
+               <property name="text">
+                <string>Death Rate
+</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="antibody_label">
+               <property name="geometry">
+                <rect>
+                 <x>720</x>
+                 <y>230</y>
+                 <width>131</width>
+                 <height>71</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: rgb(255, 255, 255);</string>
+               </property>
+               <property name="text">
+                <string>Antibody Rate
+</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="doi_number_label">
+               <property name="geometry">
+                <rect>
+                 <x>330</x>
+                 <y>490</y>
+                 <width>121</width>
+                 <height>41</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: rgb(255, 255, 255);</string>
+               </property>
+               <property name="text">
+                <string>DOI Number:
+</string>
+               </property>
+              </widget>
+              <widget class="QLineEdit" name="voc_vol">
+               <property name="geometry">
+                <rect>
+                 <x>90</x>
+                 <y>300</y>
+                 <width>113</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(200, 200, 200);
+color:black;
+border:none;
+padding-bottom:3px;
+border-radius:7px;
+
+border :2px solid ;
+border-top-color : white; 
+border-left-color :white;
+border-right-color :white;
+border-bottom-color : white
+
+</string>
+               </property>
+               <property name="placeholderText">
+                <string>...</string>
+               </property>
+              </widget>
+              <widget class="QLineEdit" name="mutation_name">
+               <property name="geometry">
+                <rect>
+                 <x>450</x>
+                 <y>110</y>
+                 <width>201</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(200, 200, 200);
+color:black;
+border:none;
+padding-bottom:3px;
+border-radius:7px;
+
+border :2px solid ;
+border-top-color : white; 
+border-left-color :white;
+border-right-color :white;
+border-bottom-color : white
+
+</string>
+               </property>
+               <property name="placeholderText">
+                <string>...</string>
+               </property>
+              </widget>
+              <widget class="QLineEdit" name="effect_vaccine">
+               <property name="geometry">
+                <rect>
+                 <x>240</x>
+                 <y>300</y>
+                 <width>141</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(200, 200, 200);
+color:black;
+border:none;
+padding-bottom:3px;
+border-radius:7px;
+
+border :2px solid ;
+border-top-color : white; 
+border-left-color :white;
+border-right-color :white;
+border-bottom-color : white
+
+</string>
+               </property>
+               <property name="placeholderText">
+                <string>...</string>
+               </property>
+              </widget>
+              <widget class="QLineEdit" name="doi_number">
+               <property name="geometry">
+                <rect>
+                 <x>460</x>
+                 <y>490</y>
+                 <width>113</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(200, 200, 200);
+color:black;
+border:none;
+padding-bottom:3px;
+border-radius:7px;
+
+border :2px solid ;
+border-top-color : white; 
+border-left-color :white;
+border-right-color :white;
+border-bottom-color : white
+
+</string>
+               </property>
+               <property name="placeholderText">
+                <string>...</string>
+               </property>
+              </widget>
+              <widget class="QLineEdit" name="Infectiousness">
+               <property name="geometry">
+                <rect>
+                 <x>420</x>
+                 <y>300</y>
+                 <width>113</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(200, 200, 200);
+color:black;
+border:none;
+padding-bottom:3px;
+border-radius:7px;
+
+border :2px solid ;
+border-top-color : white; 
+border-left-color :white;
+border-right-color :white;
+border-bottom-color : white
+
+</string>
+               </property>
+               <property name="placeholderText">
+                <string>...</string>
+               </property>
+              </widget>
+              <widget class="QLineEdit" name="death_rate">
+               <property name="geometry">
+                <rect>
+                 <x>570</x>
+                 <y>300</y>
+                 <width>113</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(200, 200, 200);
+color:black;
+border:none;
+padding-bottom:3px;
+border-radius:7px;
+
+border :2px solid ;
+border-top-color : white; 
+border-left-color :white;
+border-right-color :white;
+border-bottom-color : white
+
+</string>
+               </property>
+               <property name="placeholderText">
+                <string>...</string>
+               </property>
+              </widget>
+              <widget class="QLineEdit" name="antibody">
+               <property name="geometry">
+                <rect>
+                 <x>710</x>
+                 <y>300</y>
+                 <width>131</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(200, 200, 200);
+color:black;
+border:none;
+padding-bottom:3px;
+border-radius:7px;
+
+border :2px solid ;
+border-top-color : white; 
+border-left-color :white;
+border-right-color :white;
+border-bottom-color : white
+
+</string>
+               </property>
+               <property name="placeholderText">
+                <string>...</string>
+               </property>
+              </widget>
+              <widget class="Line" name="line">
+               <property name="geometry">
+                <rect>
+                 <x>220</x>
+                 <y>220</y>
+                 <width>3</width>
+                 <height>200</height>
+                </rect>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>60</width>
+                 <height>200</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 255, 255);</string>
+               </property>
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+              </widget>
+              <widget class="Line" name="line_2">
+               <property name="geometry">
+                <rect>
+                 <x>400</x>
+                 <y>220</y>
+                 <width>3</width>
+                 <height>200</height>
+                </rect>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>60</width>
+                 <height>200</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 255, 255);</string>
+               </property>
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+              </widget>
+              <widget class="Line" name="line_3">
+               <property name="geometry">
+                <rect>
+                 <x>550</x>
+                 <y>220</y>
+                 <width>3</width>
+                 <height>200</height>
+                </rect>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>60</width>
+                 <height>200</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 255, 255);</string>
+               </property>
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+              </widget>
+              <widget class="Line" name="line_4">
+               <property name="geometry">
+                <rect>
+                 <x>695</x>
+                 <y>220</y>
+                 <width>3</width>
+                 <height>200</height>
+                </rect>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>60</width>
+                 <height>200</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 255, 255);</string>
+               </property>
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+              </widget>
+              <widget class="Line" name="line_5">
+               <property name="geometry">
+                <rect>
+                 <x>70</x>
+                 <y>280</y>
+                 <width>800</width>
+                 <height>3</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 255, 255);</string>
+               </property>
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+             </widget>
+            </widget>
+            <widget class="QWidget" name="not_found_mutation">
+             <layout class="QVBoxLayout" name="verticalLayout_4">
+              <item>
+               <widget class="QFrame" name="frame_10">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <widget class="QLabel" name="label_3">
+                 <property name="geometry">
+                  <rect>
+                   <x>220</x>
+                   <y>130</y>
+                   <width>531</width>
+                   <height>61</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>24</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: rgb(255, 255, 255);
+
+</string>
+                 </property>
+                 <property name="text">
+                  <string>We couldn't find the mutation.</string>
+                 </property>
+                </widget>
+                <widget class="QPushButton" name="add_mutation_save_button_2">
+                 <property name="geometry">
+                  <rect>
+                   <x>360</x>
+                   <y>360</y>
+                   <width>181</width>
+                   <height>31</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>12</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(0, 0, 0);
+color:white;
+border:none;
+padding-bottom:3px;
+border-radius:7px;
+
+border :2px solid ;
+border-top-color : white; 
+border-left-color :white;
+border-right-color :white;
+border-bottom-color : white
+</string>
+                 </property>
+                 <property name="text">
+                  <string>New Mutation</string>
+                 </property>
+                </widget>
+                <widget class="QPushButton" name="search_mutation">
+                 <property name="geometry">
+                  <rect>
+                   <x>290</x>
+                   <y>450</y>
+                   <width>331</width>
+                   <height>51</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>16</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(0, 0, 0);
+color:white;
+border:none;
+padding-bottom:3px;
+border-radius:7px;
+
+border :2px solid ;
+border-top-color : white; 
+border-left-color :white;
+border-right-color :white;
+border-bottom-color : white
+</string>
+                 </property>
+                 <property name="text">
+                  <string>Search New Mutation</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="label_5">
+                 <property name="geometry">
+                  <rect>
+                   <x>280</x>
+                   <y>210</y>
+                   <width>361</width>
+                   <height>61</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>12</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: rgb(255, 255, 255);
+
+</string>
+                 </property>
+                 <property name="text">
+                  <string>You can define a new mutation if you want</string>
+                 </property>
+                </widget>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="mutation_added">
+             <widget class="QFrame" name="frame_8">
+              <property name="geometry">
+               <rect>
+                <x>-10</x>
+                <y>0</y>
+                <width>961</width>
+                <height>681</height>
+               </rect>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <widget class="QPushButton" name="search_mutation_3">
+               <property name="geometry">
+                <rect>
+                 <x>270</x>
+                 <y>550</y>
+                 <width>351</width>
+                 <height>41</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>16</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(0, 0, 0);
+color:white;
+border:none;
+padding-bottom:3px;
+border-radius:7px;
+
+border :2px solid ;
+border-top-color : white; 
+border-left-color :white;
+border-right-color :white;
+border-bottom-color : white
+</string>
+               </property>
+               <property name="text">
+                <string>Search New Mutation</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="doi_number_label_2">
+               <property name="geometry">
+                <rect>
+                 <x>320</x>
+                 <y>380</y>
+                 <width>271</width>
+                 <height>41</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: rgb(255, 255, 255);</string>
+               </property>
+               <property name="text">
+                <string>Mutation entry saved succesfully.</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_6">
+               <property name="geometry">
+                <rect>
+                 <x>340</x>
+                 <y>110</y>
+                 <width>220</width>
+                 <height>215</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </widget>
+            </widget>
+            <widget class="QWidget" name="found_mutation">
+             <widget class="QFrame" name="frame_7">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>951</width>
+                <height>681</height>
+               </rect>
+              </property>
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <widget class="QTableWidget" name="tableWidget">
+               <property name="geometry">
+                <rect>
+                 <x>40</x>
+                 <y>70</y>
+                 <width>891</width>
+                 <height>261</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: rgb(255, 255, );
+background-color: rgb(0, 0, 0);</string>
+               </property>
+               <row>
+                <property name="text">
+                 <string>New Row</string>
+                </property>
+               </row>
+               <column>
+                <property name="text">
+                 <string>VoC / Vol</string>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Segoe UI</family>
+                  <pointsize>12</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                  <stylestrategy>PreferAntialias</stylestrategy>
+                 </font>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>Effect on Vaccine</string>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Segoe UI</family>
+                  <pointsize>12</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                  <stylestrategy>PreferAntialias</stylestrategy>
+                 </font>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>Infectiousness</string>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>12</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>Death Rate</string>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>12</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>Antibody Rate</string>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>12</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+               </column>
+               <item row="0" column="0">
+                <property name="text">
+                 <string>te</string>
+                </property>
+               </item>
+               <item row="0" column="1">
+                <property name="text">
+                 <string>tet</string>
+                </property>
+               </item>
+               <item row="0" column="2">
+                <property name="text">
+                 <string>e</string>
+                </property>
+               </item>
+               <item row="0" column="3">
+                <property name="text">
+                 <string>wew</string>
+                </property>
+               </item>
+               <item row="0" column="4">
+                <property name="text">
+                 <string>ew</string>
+                </property>
+               </item>
+              </widget>
+              <widget class="QPushButton" name="search_mutation_2">
+               <property name="geometry">
+                <rect>
+                 <x>290</x>
+                 <y>410</y>
+                 <width>351</width>
+                 <height>41</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>16</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(0, 0, 0);
+color:white;
+border:none;
+padding-bottom:3px;
+border-radius:7px;
+
+border :2px solid ;
+border-top-color : white; 
+border-left-color :white;
+border-right-color :white;
+border-bottom-color : white
+</string>
+               </property>
+               <property name="text">
+                <string>Search New Mutation</string>
+               </property>
+              </widget>
+             </widget>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item alignment="Qt::AlignBottom">
+     <widget class="QFrame" name="footer_frame">
+      <property name="styleSheet">
+       <string notr="true">background-color:#24303c;</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_6">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QFrame" name="frame_9">
+         <property name="styleSheet">
+          <string notr="true">background-color: black;</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_7">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item alignment="Qt::AlignRight">
+           <widget class="QPushButton" name="logout_button">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>:/icon/white_icons/log-out.svg</normaloff>:/icon/white_icons/log-out.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>32</width>
+              <height>32</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="size_window">
+            <property name="minimumSize">
+             <size>
+              <width>15</width>
+              <height>15</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>15</width>
+              <height>15</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>
